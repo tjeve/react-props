@@ -2,7 +2,7 @@ const { createStore } = Redux;
 const { subscribe, dispatch, getState } = createStore(reducer);
 
 subscribe(() => {
-    ReactDOM.render(<App circles={getState()}/>, document.getElementById('circlesContainer'))
+    ReactDOM.render(<App circles={getState()}/>, document.getElementById('circlesContainer')) //runs App function over the current state, also look at App.js line 3 for circles
 });
 
 dispatch({ type: null }); // Here we're making a call to dispatch() - this triggers the first render.

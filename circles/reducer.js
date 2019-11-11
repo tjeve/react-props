@@ -17,6 +17,10 @@ const initialState = [
     },
 ];
 
+// function deepcopy(x) {
+//     return JSON.parse(JSON.stringify(x))
+// }
+
 const reducer = (state = initialState, action) => {
     // Handle actions here - make sure you don't mutate the state!
     const { type, color, radius } = action;
