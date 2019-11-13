@@ -23,3 +23,6 @@ const Card = (props) => {
 
     return  <img width="80" src={url}/>
 };  
+
+//Here you got confused using the new and old syntax for rendering. Console.log() to figure out what is being returned and then "build" the
+//object that needs rendering. In this case you built the url that linked to the card.
