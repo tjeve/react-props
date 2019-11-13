@@ -15,6 +15,11 @@ const App = (props) => {
 const NameTag = (props) => {
     console.log("NameTag component props:", props)
 
+    const cardProperties ={
+        value: props.value,
+        suit: props.suit
+    }
+    
     //The extra styling used on the Circles rendering is not necessary here
 
     return (
