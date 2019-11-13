@@ -21,7 +21,7 @@ const Circle = (props) => {
     }
 
     return (
-    <div style={style}></div>
+    <div style = {style}></div>
     )
 }; 
 
