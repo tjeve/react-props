@@ -45,40 +45,40 @@ const App = (props) => {
     )
 }
 
-const Tweet = (props) => {
-    console.log(props)
-}
-
 // const Tweet = (props) => {
 //     console.log(props)
+// }
 
-//     const tweetDiv = 
-//     <div class="bg-white p-2 m-2 w-50">
-//         <div class="d-flex align-items-center">
-//             <img width="50" src={ props.user.profilePic } />
-//             <div class="mt-4 ml-2">
-//                 <b>{ props.user.username} </b>
-//                 {props.user.isVerified} ? '<img width="15" src="twitterIcons/check-circle.svg" />' : ''
-//                 <p>{ props.user.handle }</p>
+const Tweet = (props) => {
+    console.log(props)
+
+    const tweetDiv = 
+    <div class="bg-white p-2 m-2 w-50">
+        <div class="d-flex align-items-center">
+            <img width="50" src={ props.user.profilePic } />
+            <div class="mt-4 ml-2">
+                <b>{ props.user.username} </b>
+                {props.user.isVerified} ? '<img width="15" src="twitterIcons/check-circle.svg" />' : ''
+                <p>{ props.user.handle }</p>
                 
-//             </div>
-//         </div>
-//         <h3> { props.text } </h3>
-//         <hr />
-//         <div>
-//             {/* <div class="d-flex text-secondary">
-//                 <img style="opacity: 0.62" src="twitterIcons/message-circle.svg" />
-//                 <b class="mr-3 ml-1">{ props.replies }</b>
-//                 <img style="opacity: 0.62" src="twitterIcons/repeat.svg" />
-//                 <b class="mr-3 ml-1">{ props.retweets }</b>
-//                 <img style="opacity: 0.62" src="twitterIcons/heart.svg" />
-//                 <b class="mr-3 ml-1">{ props.likes }</b>
-//             </div> */}
-//         </div>
-//     </div>
+            </div>
+        </div>
+        <h3> { props.text } </h3>
+        <hr />
+        <div>
+            {/* <div class="d-flex text-secondary">
+                <img style="opacity: 0.62" src="twitterIcons/message-circle.svg" />
+                <b class="mr-3 ml-1">{ props.replies }</b>
+                <img style="opacity: 0.62" src="twitterIcons/repeat.svg" />
+                <b class="mr-3 ml-1">{ props.retweets }</b>
+                <img style="opacity: 0.62" src="twitterIcons/heart.svg" />
+                <b class="mr-3 ml-1">{ props.likes }</b>
+            </div> */}
+        </div>
+    </div>
 
-//     return <div> { tweetDiv }</div>
-// };  
+    return <div> { tweetDiv }</div>
+};  
 
 // user: {
 //     handle: "@officialjaden",
@@ -92,7 +92,17 @@ const Tweet = (props) => {
 
 const User = (props) => {
     console.log(props)
-    return null
+    return (
+    <div class="d-flex align-items-center">
+            <img width="50" src={ props.user.profilePic } />
+            <div class="mt-4 ml-2">
+                <b>{ props.user.username} </b>
+                {props.user.isVerified} ? '<img width="15" src="twitterIcons/check-circle.svg" />' : ''
+                <p>{ props.user.handle }</p>
+                
+            </div>
+        </div>
+        )
 };  
 
 // CHALLENGE: Write a separate User component for use in the Tweet component
